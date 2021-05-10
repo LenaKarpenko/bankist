@@ -1,0 +1,11 @@
+@mixin font($f-name, $f-style, $f-weight, $f-url)
+  @font-face
+    font-family: $f-name
+    font-style: $f-style
+    font-weight: $f-weight
+    src: url($f-url) format('woff2')
+
+@include font('Roboto', normal, 400, '../fonts/Roboto-Regular.woff2')
+@include font('Roboto', medium, 500, '../fonts/Roboto-Medium.woff2')
+@include font('Roboto', bold, 700, '../fonts/Roboto-Bold.woff2')
+@include font('Roboto', black, 900, '../fonts/Roboto-Black.woff2')
